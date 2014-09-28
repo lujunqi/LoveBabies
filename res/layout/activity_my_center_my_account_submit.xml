@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_my_center_head_layout" />
+
+
+
+    <LinearLayout
+        android:id="@+id/my_center_enter_account_code_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/my_center_enter_account_code_edittext"
+            android:layout_width="fill_parent"
+            android:layout_height="46dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_my_center_green_round_bg"
+            android:inputType="number"
+            android:hint="请输入收到的验证码"
+            android:paddingLeft="10dp"
+            android:textColor="@color/gray_textcolor"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/my_center_enter_account_time_textview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="30秒后 可获得验证码"
+            android:textSize="18sp" />
+		<Button
+            android:id="@+id/my_center_enter_account_reget_code_btn"
+           	android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/shape_green_round_button"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="重新获取"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/my_center_enter_account_submit_code_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_green_round_button"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="提交验证码"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

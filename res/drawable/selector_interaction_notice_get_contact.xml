@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 按钮效果 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/interaction_notice_get_contact_selected" android:state_pressed="true"/>
+    <!-- pressed -->
+    <item android:drawable="@drawable/interaction_notice_get_contact_normal"/>
+    <!-- default -->
+
+</selector>

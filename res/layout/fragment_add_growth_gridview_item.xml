@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/fragment_album_gridview_item_pictrue"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/default_logo"
+        android:scaleType="fitXY" />
+
+</LinearLayout>

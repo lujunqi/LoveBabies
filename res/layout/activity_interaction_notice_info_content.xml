@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/shape_common_notice_item_back"
+        android:orientation="vertical" >
+
+      <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/fragment_interaction_notice_item_imageview_sender_icon"
+            android:layout_width="48dp"
+            android:layout_height="52dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="6dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_head_icon" />
+        
+        <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_toRightOf="@id/fragment_interaction_notice_item_imageview_sender_icon" >
+	        <RelativeLayout
+	            android:id="@+id/fragment_interaction_notice_item_layout_sender_name"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp">
+	            <TextView
+	                android:id="@+id/fragment_interaction_notice_item_textview_sender_name"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_centerVertical="true"
+	                android:layout_alignParentLeft="true"
+	                android:singleLine="true"
+	                android:text="谢园长"
+	                android:textColor="@color/gray_textcolor_3"
+	                android:textSize="16sp" />
+	            <RelativeLayout
+		            android:id="@+id/fragment_interaction_notice_item_layout_notice_type"
+		            android:layout_width="70dp"
+		            android:layout_height="30dp"
+		            android:layout_alignParentRight="true"
+		            android:background="@drawable/fragment_interaction_notice_textview_notice_type_bg">
+		            <TextView
+		                android:id="@+id/fragment_interaction_notice_item_textview_notice_type"
+		                android:layout_width="wrap_content"
+		                android:layout_height="30dp"
+		                android:layout_alignParentRight="true"
+		                android:layout_marginRight="6dp"
+		                android:ellipsize="marquee"
+		                android:gravity="center_vertical"
+		                android:singleLine="true"
+		                android:text="我的课程"
+		                android:textColor="#ffffff"
+		                android:textSize="12sp" />
+		        </RelativeLayout>	
+	        </RelativeLayout>
+	        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp" >
+
+                <TextView
+                    android:id="@+id/fragment_interaction_notice_item_textview_notice_publish_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:text="2014-09-10 09:11"
+                    android:textColor="@color/gray_textcolor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fragment_interaction_notice_item_textview_org_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/fragment_interaction_notice_item_textview_notice_publish_time"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="来自：新幼儿园"
+                    android:textColor="#ff614c"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView 
+        	android:id="@+id/fragment_interaction_notice_item_content_textview"
+        	android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginTop="5dp"
+	        android:text="亲爱的家长，下周周计划已经上传，请记得查看额"
+	        android:textColor="@color/gray_textcolor_2"
+            android:textSize="14sp"
+        />
+	<!-- 公告图片 -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp" >
+
+        <GridView
+	        android:id="@+id/fragment_interaction_notice_item_gridview_pictures"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_gravity="center_horizontal"
+	        android:padding="6dp"
+	        android:horizontalSpacing="2dp"
+	        android:listSelector="#ffffff"
+	        android:numColumns="3"
+	        android:columnWidth="80dp"
+	        android:scrollbars="none"
+	        android:stretchMode="none"   
+	        android:verticalSpacing="2dp"/>
+
+        <TextView
+            android:id="@+id/activity_interaction_notice_detail_textview_notice_picture_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:text="共3张 >"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+    	</RelativeLayout>
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="10dp"
+	        android:layout_marginTop="8dp"
+	        android:gravity="center_horizontal" >
+
+        <LinearLayout
+            android:id="@+id/fragment_interaction_layout_comment_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/fragment_interaction_imageview_comment_count"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/g_speech" />
+
+            <TextView
+                android:id="@+id/fragment_interaction_textview_comment_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="评论"
+                android:textColor="@color/album_mark_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_interaction_layout_zan_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/fragment_interaction_imageview_zan_count"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/g_zan" />
+
+            <TextView
+                android:id="@+id/fragment_interaction_textview_zan_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点赞"
+                android:textColor="@color/album_mark_gray" />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+	<LinearLayout 
+        android:layout_width="fill_parent"
+       	android:layout_height="wrap_content"
+       	android:layout_marginTop="4dp"
+       	android:layout_marginBottom="4dp"
+       	android:layout_marginRight="10dp"
+       	android:gravity="right">
+       	 <LinearLayout 
+       	     android:id="@+id/fragment_interaction_layout_zan"
+             android:layout_width="wrap_content"
+        	 android:layout_height="wrap_content"
+        	 android:layout_marginRight="20dp"
+        	 android:gravity="bottom">
+       	     <ImageView 
+       	         android:id="@+id/fragment_interaction_imageview_zan"
+                 android:layout_width="20dp"
+        		 android:layout_height="20dp"
+        		 android:src="@drawable/activity_interaction_notice_detail_praise_0"
+        		 android:layout_marginRight="2dp"/>
+            <TextView 
+                android:id="@+id/fragment_interaction_textview_zan"
+                android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:textColor="@color/album_mark_gray"
+        		android:textSize="14sp"
+        		android:text="点赞"
+                />
+       	 </LinearLayout>
+       	 <LinearLayout 
+       	    android:id="@+id/fragment_interaction_layout_comment"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginRight="6dp"
+        	android:gravity="bottom">
+       	     <ImageView 
+       	        android:id="@+id/fragment_interaction_imageview_comment"
+                android:layout_width="20dp"
+        		android:layout_height="20dp"
+        		android:src="@drawable/activity_interaction_notice_detail_comment_0"
+        		android:layout_marginRight="2dp"/>
+            <TextView 
+                android:id="@+id/fragment_interaction_textview_comment"
+                android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:textColor="@color/album_mark_gray"
+        		android:textSize="14sp"
+        		android:text="评论"
+                />
+       	 </LinearLayout>
+	</LinearLayout> 
+	 <LinearLayout 
+	        android:layout_width="fill_parent"
+	       	android:layout_height="wrap_content"
+	       	android:layout_marginTop="4dp"
+	       	android:background="#F4F4F4"
+	       	android:gravity="left">
+       	  <ImageView
+	        android:id="@+id/interaction_notice_bottom_zan_imageview"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:src="@drawable/g_yizan" />
+	    
+	      <TextView 
+	        android:id="@+id/interaction_notice_bottom_zan_textveiw"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:gravity="center_vertical"
+	        android:textSize="14sp"
+		    android:textColor="#B5ACA5"
+	        android:text="BING,小喵,旺旺,大大卷儿"/>
+		</LinearLayout> 
+</LinearLayout>

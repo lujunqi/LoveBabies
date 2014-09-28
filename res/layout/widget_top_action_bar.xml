@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/activity_main_actionbar_bg" >
+
+    <ImageButton
+        android:id="@+id/widget_activity_main_action_bar_imagebutton_menu"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical|left"
+        android:layout_margin="5dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/actionbar_icon_menu" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <com.xqj.lovebabies.widgets.CircleImageView
+            android:id="@+id/widget_activity_main_action_bar_imageview_title_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="invisible"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:src="@drawable/default_logo"
+            app:border_color="#FFFFFFFF"
+            app:border_width="4dp" 
+            />
+
+        <TextView
+            android:id="@+id/widget_activity_main_action_bar_textview_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:maxWidth="100dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/widget_activity_main_action_bar_imageview_title_icon" 
+            android:text="小甜甜dddddddd"
+            android:singleLine="true"
+			android:ellipsize="marquee"
+			android:focusable="true"
+			android:marqueeRepeatLimit="marquee_forever"
+			android:focusableInTouchMode="true" 
+        	android:scrollHorizontally="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/widget_activity_main_action_bar_imageview_action"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:visibility="invisible"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/widget_activity_main_action_bar_textview_title"
+            android:src="@drawable/growth_01" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/widget_activity_main_action_bar_imagebutton_more"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical|right"
+        android:layout_margin="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/add_baby_growth_selector" />
+
+</FrameLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/ewen_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:textColor="#FF0000" />
+
+        <RelativeLayout
+            android:id="@+id/ewen_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ewen_info"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/fragment_ewen_normal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dip"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/ewen_type"
+                    android:layout_width="35dip"
+                    android:layout_height="35dip" />
+
+                <EditText
+                    android:id="@+id/ewen"
+                    android:layout_width="150dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:background="@null"
+                    android:inputType="numberDecimal"
+                    android:textColor="#7cb31d"
+                    android:textSize="35dip" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ewen_head"
+            android:layout_margin="10dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_centerVertical="true"
+                android:background="#A5A5A5" >
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="#ffffff"
+                android:text="其他项目"
+                android:textColor="#686868" />
+        </RelativeLayout>
+
+        <TableLayout
+            android:id="@+id/other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line"
+            android:orientation="horizontal" >
+
+            <TableRow android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/teeth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/fragment_ewen_teeth_slt"
+                    android:gravity="center_horizontal"
+                    android:text="口腔" />
+
+                <CheckBox
+                    android:id="@+id/eye"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/fragment_ewen_eye_slt"
+                    android:gravity="center_horizontal"
+                    android:text="红眼" />
+
+                <CheckBox
+                    android:id="@+id/skin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/fragment_ewen_skin_slt"
+                    android:gravity="center_horizontal"
+                    
+                    android:text="皮肤" />
+                
+            </TableRow>
+
+            <TableRow>
+
+                <CheckBox
+                    android:id="@+id/medicine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/fragment_ewen_medicine_slt"
+                    android:gravity="center_horizontal"
+                    android:text="服药" />
+
+                <CheckBox
+                    android:id="@+id/dangerous"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/fragment_ewen_dangerous_slt"
+                    android:gravity="center_horizontal"
+                    android:text="危险物品" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/fragment_ewen_dangerous_slt"
+                    android:visibility="invisible" />
+            </TableRow>
+        </TableLayout>
+
+        <EditText
+            android:id="@+id/meno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/other"
+            android:layout_margin="10dip"
+            android:hint="备注"
+            android:textColor="#B7B7B6" />
+
+        <Button
+            android:id="@+id/fragment_ewen_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/meno"
+            android:layout_margin="10dip"
+            android:background="@drawable/fragment_ewen_btn_shape"
+            android:padding="10dip"
+            android:text="保存"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+</ScrollView>

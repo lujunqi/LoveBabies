@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 添加成长记录按钮点击效果 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android"> 
+<item android:state_pressed="true" android:drawable="@drawable/actionbar_icon_cancel" /> <!-- pressed --> 
+<item android:state_focused="true" android:drawable="@drawable/actionbar_icon_cancel" /> <!-- focused --> 
+<item android:drawable="@drawable/actionbar_icon_add" /> <!-- default --> 
+</selector>

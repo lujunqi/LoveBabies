@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>   
+  
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"   
+  
+    android:layout_width="fill_parent"   
+  
+    android:layout_height="fill_parent"   
+  
+    android:shrinkColumns="0" > 
+  
+    <TableRow>   
+  
+        <RelativeLayout 
+            android:layout_width="fill_parent"   
+        	android:layout_height="fill_parent"
+        	 >
+            <TextView   
+                android:layout_width="wrap_content"   
+		        android:layout_height="fill_parent"
+		        android:layout_alignParentRight="true"
+	            android:text="column1"   
+	            android:padding="3dip"  />   
+         	<View   
+		        android:layout_width="1dip"   
+		        android:layout_height="fill_parent"
+		        android:background="#D8D5D0"
+		        android:layout_alignParentRight="true" /> 
+        </RelativeLayout>
+         
+  
+         <TextView   
+  
+            android:text="column2"   
+  
+            android:padding="3dip"  />  
+        <TextView   
+  
+            android:text="column3"   
+  
+            android:padding="3dip"  />   
+  
+    </TableRow>   
+  
+    <TableRow>   
+  
+        <TextView   
+  
+          android:text="column11"   
+  
+          android:visibility="invisible"/>   
+  
+        <TextView   
+  
+            android:text="左边的invisible"   
+  
+            android:gravity="right"   
+  
+            android:padding="3dip" />   
+  
+        <Button   
+  
+            android:id="@+id/go2"   
+  
+            android:text="go2"    
+  
+            android:padding="3dip" />   
+  
+        <Button   
+  
+            android:text="cancel"   
+  
+            android:padding="3dip" />   
+  
+    </TableRow>   
+  
+    <View   
+  
+        android:layout_height="1dip"   
+  
+        android:background="#D8D5D0" />   
+  
+    <TableRow>   
+        
+        <RelativeLayout 
+            android:layout_width="fill_parent"   
+        	android:layout_height="fill_parent">  
+        	 <TextView   
+                android:layout_width="wrap_content"   
+		        android:layout_height="fill_parent"
+		        android:layout_alignParentRight="true"
+	            android:text="右边的cell empty"    />   
+         	<View   
+		        android:layout_width="1dip"   
+		        android:layout_height="fill_parent"
+		        android:background="#D8D5D0"
+		        android:layout_alignParentRight="true" /> 
+        </RelativeLayout>
+  
+        <TextView   
+  
+          android:text="右边的cell empty" />   
+  
+        <TextView   
+  
+            android:layout_column="2"   
+  
+            android:text="跳开empty cell"   
+  
+            android:padding="3dip" />   
+  
+        <TextView   
+  
+            android:text="123456789"   
+  
+            android:padding="3dip" />   
+  
+    </TableRow>   
+  
+</TableLayout>   

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/orange" >
+      <RelativeLayout
+        android:id="@+id/my_center_favorite_item_left_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/orange"
+        android:paddingBottom="2dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp" >
+
+        <ImageView
+            android:id="@+id/my_center_favorite_item_icon_imageview"
+            android:layout_width="108dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_logo" />
+
+        <TextView
+            android:id="@+id/my_center_favorite_item_title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@id/my_center_favorite_item_icon_imageview"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:text="孩子焦虑的原因" />
+       
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_center_favorite_item_del_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/red_bg" >
+
+        <TextView
+            android:id="@+id/my_center_favorite_item_del_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="删除收藏"
+            android:textSize="18sp"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+</LinearLayout>

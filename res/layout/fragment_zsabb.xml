@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xqj.lovebabies.widgets.ZsabbScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:orientation="vertical" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/health_top_pics_viewpager"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <RelativeLayout
+                android:id="@+id/top_page_bottom_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="36dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/health_information_top_page_bottom_bg"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/top_page_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dp"
+                    android:gravity="center_vertical"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:id="@+id/dot_num_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2dp"
+                    android:layout_toRightOf="@id/top_page_title"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_zsabb_date_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="36dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/zsabb_date_bg"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/fragment_zsabb_date_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textColor="#ffffff"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/fragment_zsabb_health_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="260dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/orange"
+            android:divider="@color/gray_divider"
+            android:dividerHeight="1px"
+            android:drawSelectorOnTop="false"
+            android:listSelector="@color/orange"
+            android:padding="4dp"
+            android:scrollbars="none" />
+		<GridView
+	            android:id="@+id/fragment_zsabb_album_gridview"
+	            android:layout_width="wrap_content"
+	            android:layout_height="215dp"
+	            android:layout_margin="5dp"
+	            android:gravity="center"
+	            android:background="@color/orange"
+	            android:columnWidth="96dp"
+	            android:horizontalSpacing="10dp"
+	            android:listSelector="@color/orange"
+	            android:numColumns="3"
+	            android:padding="10dp"
+	            android:scrollbars="none"
+	            android:stretchMode="spacingWidth"
+	            android:verticalSpacing="2dp" >
+	        </GridView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/orange" >
+
+            <RelativeLayout
+                android:id="@+id/fragment_zsabb_study_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/fragment_zsabb_study_left_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/orange"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/fragment_zsabb_study_left_imageview"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/zsabb_study_icon_1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fragment_zsabb_study_right_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/fragment_zsabb_study_left_layout"
+                    android:background="@color/orange"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/fragment_zsabb_study_right_imageview"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/zsabb_study_icon_2" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</com.xqj.lovebabies.widgets.ZsabbScrollView>

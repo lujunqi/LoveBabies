@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <!-- DropDownListView -->
+    <dimen name="drop_down_list_header_padding_top">12dp</dimen>
+    <dimen name="drop_down_list_header_padding_bottom">15dp</dimen>
+    <dimen name="drop_down_list_header_progress_bar_height">36dp</dimen>
+    <dimen name="drop_down_list_footer_progress_bar_height">36dp</dimen>
+    <!-- SlidingMenu -->
+    <dimen name="sliding_menu_item_user_icon_size">60dp</dimen>
+    <dimen name="sliding_menu_item_user_name_text_size">15dp</dimen>
+    <dimen name="sliding_menu_item_common_icon_size">50dp</dimen>
+    <dimen name="sliding_menu_item_common_title_text_size">10dp</dimen>
+    <!-- fragment_interaction -->
+    <dimen name="fragment_interaction_bottom_button_icon_size">50dp</dimen>
+    <dimen name="fragment_interaction_bottom_button_text_size">7sp</dimen>
+    <!-- fragment_interaction_contacts_item -->
+    <dimen name="fragment_interaction_contacts_item_user_icon_size">50dp</dimen>
+    <dimen name="fragment_interaction_contacts_item_user_icon_margin">5dp</dimen>
+    <!-- activity_chat -->
+    <dimen name="activity_chat_image_option_icon_size">40dp</dimen>
+    <dimen name="activity_chat_image_option_text_size">8sp</dimen>
+    <!-- fragment_interaction_notice_user_icon_size -->
+    <dimen name="fragment_interaction_notice_user_icon_size">50dp</dimen>
+    <dimen name="fragment_interaction_notice_user_name_size">10sp</dimen>
+    <!-- fragment_interaction_notice_gridview_picture -->
+    <dimen name="fragment_interaction_notice_gridview_picture_size">80dp</dimen>
+
+</resources>

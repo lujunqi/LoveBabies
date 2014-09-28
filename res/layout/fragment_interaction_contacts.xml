@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:listViewAttr="http://schemas.android.com/apk/res/com.xqj.lovebabies"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <cn.trinea.android.common.view.DropDownListView
+            android:id="@+id/fragment_interaction_contacts_listview_contacts"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:drawSelectorOnTop="false"
+            android:scrollbars="none"
+            listViewAttr:isAutoLoadOnBottom="false"
+            listViewAttr:isDropDownStyle="true"
+            listViewAttr:isOnBottomStyle="false" />
+
+        <TextView
+            android:id="@+id/fragment_interaction_contacts_textview_selected_letters"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="30.0dip"
+            android:visibility="invisible" />
+
+        <com.xqj.lovebabies.widgets.ContactsSideBar
+            android:id="@+id/fragment_interaction_contacts_sidebar_letters"
+            android:layout_width="30.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center" />
+    </FrameLayout>
+
+</LinearLayout>

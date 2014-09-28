@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/activity_login_bg" >
+
+    <ImageView
+        android:id="@+id/activity_login_imageview_logo"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_above="@+id/activity_login_linearlayout_login_form"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:id="@+id/activity_login_linearlayout_login_form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/activity_login_edittext_user_name"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:hint="@string/activity_login_edittext_user_name_hint_value"
+            android:inputType="phone"
+            android:padding="8dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/activity_login_edittext_user_password"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:hint="@string/activity_login_edittext_user_password_hint_value"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/activity_login_button_login"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/selector_login_button"
+            android:text="@string/activity_login_button_login_text_value" />
+
+        <Button
+            android:id="@+id/activity_login_button_visitor"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/selector_login_button"
+            android:text="@string/activity_login_button_visitor_text_value" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/activity_login_textview_register_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/activity_login_textview_register_user_text_value"
+            android:textColor="#36540d"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/activity_login_textview_find_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="@string/activity_login_textview_find_password_text_value"
+            android:textColor="#36540d"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

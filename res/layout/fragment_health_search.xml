@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    android:orientation="vertical" >
+    <include 
+        layout="@layout/activity_my_center_head_layout"/>
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+	    android:layout_height="70dp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:layout_gravity="center_horizontal"
+	    android:background="@color/orange">
+        <EditText 
+            android:id="@+id/health_search_edittext"
+            android:layout_width="220dp"
+	    	android:layout_height="40dp"
+	    	android:layout_centerVertical="true"
+	    	android:layout_alignParentLeft="true"
+	    	android:background="@drawable/shape_green_edittext_bg"
+            />
+        <Button 
+            android:id="@+id/health_search_button"
+            android:layout_width="50dp"
+	    	android:layout_height="40dp"
+	    	android:layout_alignParentRight="true"
+	    	android:layout_toRightOf="@id/health_search_edittext"
+	    	android:layout_centerVertical="true"
+	    	android:background="@drawable/shape_green_button"
+	    	android:text="搜  索"
+	    	android:textColor="#ffffff"
+	    	android:textSize="16sp"
+            />
+    </RelativeLayout>
+    
+    <ListView
+           android:id="@+id/fragment_health_search_listview"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginBottom="4dp"
+           android:dividerHeight="1px"
+           android:divider="@color/green_divider"
+           android:drawSelectorOnTop="false"
+           android:scrollbars="none"
+           android:background="@color/orange">
+      </ListView>
+
+</LinearLayout>

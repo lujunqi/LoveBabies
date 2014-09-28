@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="96dp"
+    android:orientation="horizontal"
+    android:background="@color/orange" >
+     
+ <RelativeLayout
+        android:id="@+id/my_center_relations_item_left_layout"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_marginLeft="4dp"
+        android:background="@color/orange" >
+
+        <ImageView
+            android:id="@+id/my_center_relations_icon_imageview"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/default_head_icon" />
+
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="18dp"
+            android:layout_toRightOf="@id/my_center_relations_icon_imageview"
+            android:orientation="vertical"
+            android:background="@color/orange"
+            >
+            <TextView
+	            android:id="@+id/my_center_relations_name_textview"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center_vertical"
+	            android:textColor="#000000"
+	            android:textSize="18sp"
+	            android:text="老顽童" />
+            <LinearLayout 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="12dp"
+	            android:gravity="center_vertical"
+	            android:orientation="horizontal">
+                <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:gravity="center_vertical"
+		            android:textColor="#777777"
+		            android:textSize="16sp"
+		            android:text="亲友关系：" />
+                <TextView
+		            android:id="@+id/my_center_relations_textview"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:gravity="center_vertical"
+		            android:textColor="#41557D"
+		            android:textSize="16sp"
+		            android:text="爷爷" />
+            </LinearLayout>
+             
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/my_center_relations_right_layout"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:background="@color/red_bg" >
+		<TextView
+	            android:id="@+id/my_center_relations_del_textview"
+	            android:layout_width="80dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:text="取消关注"
+	            android:textSize="16sp"
+	            android:textColor="#ffffff" />
+        
+    </RelativeLayout>
+
+</LinearLayout>
+

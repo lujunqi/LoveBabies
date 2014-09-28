@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/my_center_points_history_tablerow"
+    android:layout_width="296dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/orange"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="1dp"
+        android:background="#D8D5D0" >
+
+        <TextView
+            android:id="@+id/my_center_points_history_tablerow_event"
+            android:layout_width="99dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@color/orange"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/gray_textcolor"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="48dp"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="1dp"
+        android:background="#D8D5D0" >
+
+        <TextView
+            android:id="@+id/my_center_points_history_tablerow_points"
+            android:layout_width="47dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@color/orange"
+            android:gravity="center"
+            android:textColor="@color/gray_textcolor"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:background="#D8D5D0" >
+
+        <TextView
+            android:id="@+id/my_center_points_history_tablerow_time"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@color/orange"
+            android:gravity="left"
+            android:textColor="@color/gray_textcolor"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="1dp"
+        android:background="@color/orange" >
+
+        <TextView
+            android:id="@+id/my_center_points_history_tablerow_remark"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@color/orange"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/gray_textcolor"
+            android:textSize="10sp" />
+    </RelativeLayout>
+</LinearLayout>
+
+           

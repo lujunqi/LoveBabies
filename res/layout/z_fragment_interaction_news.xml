@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+    <com.xqj.lovebabies.widgets.LazyScrollView 
+        android:id="@+id/fragment_news_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:paddingBottom="10dp"
+        android:layout_weight="1"
+        android:scrollbars="@null"
+        android:background="#ffffff" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:paddingLeft="6dp" 
+            android:paddingRight="4dp" >
+
+            <LinearLayout
+                android:id="@+id/fragment_news_layout_01"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_news_layout_02"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+        </LinearLayout>
+        
+    </com.xqj.lovebabies.widgets.LazyScrollView>
+    <TextView
+        android:id="@+id/fragment_news_loading_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Loading..."
+        android:textColor="#000000"
+        android:background="#ffffff"
+        android:visibility="gone"  />
+</LinearLayout>

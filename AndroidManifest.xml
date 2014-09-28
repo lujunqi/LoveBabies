@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xqj.lovebabies"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <!-- 蓝牙 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" /> <!-- 使用照相机权限 -->
+    <uses-feature android:name="android.hardware.camera.autofocus" /> <!-- 自动聚焦权限 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" /> <!-- 闪光灯 -->
+
+
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+
+    <permission
+        android:name="com.xqj.lovebabies.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.xqj.lovebabies.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+        android:name="com.jpush.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppBaseTheme" >
+        <receiver android:name="com.xqj.lovebabies.broadcasts.activity_main_message_receiver" >
+            <intent-filter>
+                <action android:name="com.xqj.lovebabies.broadcast.RECEIVEMESSAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xqj.lovebabies.broadcasts.boot_complate" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityLogo"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityDescription"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityLogin"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityMain"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 家园互动  会话 -->
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityInteractionChatB"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="locale|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityInteractionChat"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="locale|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <!-- 家园互动  公告详情 -->
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityInteractionNoticeDetail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 家园互动  发布公告 -->
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityInteractionNoticeEditor"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- （发布公告）列出选择联系人列表 -->
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityNoticeAddContacts"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityInteractionNewsDetail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityViewNoticePhoto"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- lxk -->
+        <!-- 宝宝相册 -->
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityAddBabyByEcode"
+            android:screenOrientation="portrait"
+            android:theme="@style/translucent" >
+        </activity>
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityAddGrowthSelector"
+            android:screenOrientation="portrait"
+            android:theme="@style/translucent" >
+        </activity>
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityViewGrowthInfo"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityAddBabyGrowthInfo"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityViewGrowthPhoto"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 个人中心模块 -->
+
+
+        <!-- 用户注册 -->
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityRegister"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityRegisterCheckCode"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityRegisterSetPwdNick"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityRegisterFinished"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 隐私条例 -->
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityReadRules"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 找回密码 -->
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityResetPassword"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityResetPasswordCheckCode"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityResetPasswordSetNew"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 用户信息修改 -->
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityPersonalInfo"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityMyCenterChangeNickname"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityMyCenterChangePassword"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 用户账号修改 -->
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityMyCenterMyAccount"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityMyCenterMyAccountNewAccount"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityMyCenterMyAccountSubmit"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 用户邮箱修改 -->
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityMyCenterChangeEmail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 设置 -->
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityMyCenterSetting"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityMyCenterSettingAboutUs"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 我的积分 -->
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityMyCenterPoints"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 我的收藏 -->
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityMyCenterFavorite"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 我的宝宝 -->
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityMyCenterMyBaby"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityMyCenterAddMyBaby"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityMyCenterModifyMyBaby"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityMyCenterBabyRelations"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityMyCenterInviteFamily"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityMyCenterSendInviteToFamily"
+            android:screenOrientation="portrait"
+            android:theme="@style/translucent" >
+        </activity>
+        <!-- 我关注的宝宝 -->
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityMyCenterMyCareBaby"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 健康育儿 -->
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityHealthDetail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityHealthSearch"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 点读学习 -->
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityBabyStudy"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 育苗提醒 -->
+        <activity
+            android:name="com.xqj.lovebabies.activitys.ActivityYmXq"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 一键分享 keyboardHidden|orientation|screenSize -->
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+
+        <!-- 隐藏键盘   全屏 -->
+        <activity
+            android:name="com.zxing.activity.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="io.vov.vitamio.activity.InitActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|navigation"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+        <service android:name="com.xqj.lovebabies.services.service_xmpp_receiver" >
+        </service>
+
+        <!-- 极光推送 -->
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.xqj.lovebabies" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+
+        <!-- Required SDK 核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000" >
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" /> <!-- Required  显示通知栏 -->
+                <category android:name="com.xqj.lovebabies" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name="com.jpush.MyReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.xqj.lovebabies" />
+            </intent-filter>
+        </receiver>
+
+
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="c00b53637ec12d30c12c0a73" /> <!-- </>值来自开发者平台取得的AppKey -->
+
+    </application>
+
+</manifest>

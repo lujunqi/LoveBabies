@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:listViewAttr="http://schemas.android.com/apk/res/com.xqj.lovebabies"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#F9F7E8"
+        android:orientation="horizontal"
+        android:padding="10dip" >
+
+        <EditText
+            android:id="@+id/search_key"
+            android:layout_width="fill_parent"
+            android:layout_height="40px"
+            android:layout_weight="1.0"
+            android:gravity="fill_vertical"
+            android:background="@drawable/fragment_babies_search_shape"
+            android:hint="输入关键字"
+            android:textColor="#ACACAC" />
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40px"
+            android:layout_weight="1.0"
+            android:gravity="fill_vertical"
+            android:background="@drawable/fragment_babies_search_btn" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#D4CEA8" >
+    </View>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <cn.trinea.android.common.view.DropDownListView
+            android:id="@+id/fragment_check_babies_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:drawSelectorOnTop="false"
+            android:scrollbars="none"
+            listViewAttr:isAutoLoadOnBottom="false"
+            
+            listViewAttr:isDropDownStyle="true"
+            listViewAttr:isOnBottomStyle="false" />
+        <com.xqj.lovebabies.widgets.ContactsSideBar
+            android:id="@+id/fragment_check_babies_sidebar_letters"
+            android:layout_width="30.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center" />
+    </FrameLayout>
+
+</LinearLayout>

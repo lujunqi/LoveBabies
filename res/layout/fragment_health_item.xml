@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/orange">
+
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="6dp"
+    	android:layout_marginBottom="6dp" 
+    	android:background="@color/orange"
+        >
+        
+        <ImageView
+        android:id="@+id/health_pic_imageview"
+        android:layout_width="96dp"
+        android:layout_height="64dp"
+        android:layout_marginLeft="6dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/health_arrow_imageview"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/health_infomation_arrow" />
+
+    <TextView
+        android:id="@+id/health_title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_toLeftOf="@id/health_arrow_imageview"
+        android:layout_toRightOf="@id/health_pic_imageview"
+        android:layout_weight="1"
+        android:text="妈妈，别做一匹孤独的战马"
+        android:textColor="@color/green_textcolor" 
+        android:textSize="14sp"/>
+    </RelativeLayout>
+
+</LinearLayout>

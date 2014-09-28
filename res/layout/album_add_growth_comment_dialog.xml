@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 评论宝宝成长记录对话框 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="210dp"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+	<LinearLayout 
+	   	android:layout_width="fill_parent"
+    	android:layout_height="50dp" 
+    	android:orientation="vertical"
+    	android:gravity="center_vertical"
+    	android:background="#7DB31B">
+	    <TextView 	
+	        android:layout_width="fill_parent"
+    		android:layout_height="40dp"
+    		android:layout_marginLeft="8dp"
+    		android:gravity="center_vertical"
+    		android:textSize="20sp"
+    		android:textColor="#FFFFFF"
+    		android:text="添加评论"/>
+	</LinearLayout>
+	
+	<LinearLayout 
+	   	android:layout_width="fill_parent"
+    	android:layout_height="120dp" 
+    	android:orientation="vertical"
+    	android:gravity="center_vertical"
+    	android:background="#FFFFFF">
+	    
+	 	<EditText 
+	 	    android:id="@+id/growth_add_comment_content_edittext"
+	 	    android:layout_width="fill_parent"
+    		android:layout_height="100dp"
+    		android:layout_margin="10dp"
+    		android:textColorHint="#A3A3A3"
+        	android:textSize="14sp"
+        	android:maxLength="300"
+        	android:paddingTop="10dip"  
+        	android:paddingLeft="5dip"  
+        	android:paddingRight="5dip"  
+        	android:paddingBottom="5dip"
+        	android:gravity="top|left"
+        	android:hint="在这里输入您的评论"
+    		android:background="@drawable/activity_add_growth_edittext_bg"/>
+	
+	    </LinearLayout>
+	<LinearLayout 
+	   	android:layout_width="fill_parent"
+    	android:layout_height="40dp" 
+    	android:orientation="horizontal"
+    	android:gravity="center"
+    	android:background="#FFFFFF">
+	 	<Button 
+	 	    android:id="@+id/growth_save_comment_button"
+	 	    android:layout_width="48dp"
+    		android:layout_height="23dp"
+    		android:text="提  交"
+    		android:textSize="14sp"
+    		android:background="@drawable/shape_green_round_button" />
+	 	<Button 
+	 	    android:id="@+id/growth_reset_comment_button"
+	 	    android:layout_width="48dp"
+    		android:layout_height="23dp"
+    		android:layout_marginLeft="60dp"
+    		android:text="重  置"
+    		android:textSize="14sp"
+    		android:background="@drawable/shape_gray_round_button" />
+	 </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:listViewAttr="http://schemas.android.com/apk/res/com.xqj.lovebabies"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <cn.trinea.android.common.view.DropDownListView
+            android:id="@+id/fragment_check_gun_mac_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:drawSelectorOnTop="false"
+            android:scrollbars="none"
+            listViewAttr:isAutoLoadOnBottom="false"
+            listViewAttr:isDropDownStyle="true"
+            listViewAttr:isOnBottomStyle="false" />
+    </FrameLayout>
+
+</LinearLayout>

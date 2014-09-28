@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">掌上爱宝贝</string>
+    <!-- DropDownListView -->
+    <string name="drop_down_list_header_default_text">点击可以刷新</string>
+    <string name="drop_down_list_header_pull_text">下拉可以刷新</string>
+    <string name="drop_down_list_header_release_text">松开可以刷新</string>
+    <string name="drop_down_list_header_loading_text">加载中…</string>
+    <string name="drop_down_list_footer_default_text">更多</string>
+    <string name="drop_down_list_footer_loading_text">加载中…</string>
+    <string name="drop_down_list_footer_no_more_text">没有更多了</string>
+    <!-- activity_login -->
+    <string name="activity_login_edittext_user_name_hint_value">请在此输入您的手机号码</string>
+    <string name="activity_login_edittext_user_password_hint_value">请在此输入您的登录密码</string>
+    <string name="activity_login_button_login_text_value">登录</string>
+    <string name="activity_login_button_visitor_text_value">游客</string>
+    <string name="activity_login_textview_register_user_text_value">注册用户</string>
+    <string name="activity_login_textview_find_password_text_value">找回密码</string>
+
+    <!-- album -->
+        <string name="album_negative_button_text_value">取消</string>
+        <string name="album_positive_button_text_value">确定</string>
+     
+    <!-- about us -->    
+        <string name="my_center_setting_about_us">\u3000\u3000掌上爱宝贝是以云计算技术为基础，以宝贝疫苗提醒为特色功能，整合国内外婴幼儿教育资源，用手机呈现的方式，实现了早教机构及幼儿园与家长之间的实时互动，随时随地关注婴幼儿身心健康、教育成长的管理系统。</string>
+</resources>

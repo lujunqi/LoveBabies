@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:listViewAttr="http://schemas.android.com/apk/res/com.xqj.lovebabies"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+
+    <com.xqj.lovebabies.widgets.TopActionBar
+        android:id="@+id/activity_chat_topactionbar_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" >
+    </com.xqj.lovebabies.widgets.TopActionBar>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/activity_chat_topactionbar_menu"
+        android:orientation="vertical" >
+
+        <cn.trinea.android.common.view.DropDownListView
+            android:id="@+id/activity_chat_listview_message"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:divider="#ffffff"
+            android:dividerHeight="0dp"
+            android:drawSelectorOnTop="false"
+            android:listSelector="#ffffff"
+            android:padding="5dp"
+            android:scrollbars="none"
+            listViewAttr:isAutoLoadOnBottom="false"
+            listViewAttr:isDropDownStyle="true"
+            listViewAttr:isOnBottomStyle="false" >
+        </cn.trinea.android.common.view.DropDownListView>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#c0c0c0" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:transcriptMode="normal" >
+
+            <Button
+                android:id="@+id/activity_chat_button_option_image_message"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/selector_common_button"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/activity_chat_edittext_message"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_common_input"
+                android:imeOptions="actionDone"
+                android:inputType="textMultiLine"
+                android:maxLength="200"
+                android:maxLines="3"
+                android:minLines="1"
+                android:padding="5dp"
+                android:singleLine="false"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/activity_chat_button_send_voice_message"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_common_button"
+                android:padding="8dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/activity_chat_button_option_voice_message"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/selector_common_button"
+                android:padding="8dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/activity_chat_button_option_text_message"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/selector_common_button"
+                android:padding="8dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/activity_chat_button_send_text_message"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/selector_common_button"
+                android:padding="8dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_chat_layout_image_options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/activity_chat_button_add_image_from_inside"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_common_button"
+                android:padding="8dp" />
+
+            <Button
+                android:id="@+id/activity_chat_button_add_image_from_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_common_button"
+                android:padding="8dp" />
+
+            <Button
+                android:id="@+id/activity_chat_button_add_image_from_local"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_common_button"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/activity_chat_gridview_inside_image"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/shape_common_input"
+            android:columnWidth="30dp"
+            android:numColumns="auto_fit"
+            android:scrollbars="none"
+            android:visibility="gone" >
+        </GridView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/activity_interaction_chat_voice_amp_indicator"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/voice_indicator_amp1"
+        android:visibility="gone" >
+    </ImageView>
+
+</RelativeLayout>

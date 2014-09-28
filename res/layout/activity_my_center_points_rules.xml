@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_mycenter_points_buy_gray_round_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="296dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="事件"
+                android:textColor="@color/gray_textcolor_3"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="积分"
+                android:textColor="@color/gray_textcolor_3"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="每日上限"
+                android:textColor="@color/gray_textcolor_3"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="备注"
+                android:textColor="@color/gray_textcolor_3"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/my_center_points_rules_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="10dp"
+            android:dividerHeight="4dp"
+            android:divider="@color/gray_bg"
+            android:scrollbars="none" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

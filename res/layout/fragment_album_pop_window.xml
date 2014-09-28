@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="wrap_content" android:gravity="center_horizontal"
+	>
+	<LinearLayout 
+	    android:id="@+id/album_pop_window_layout"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="wrap_content" android:gravity="center_horizontal"
+	>
+	<TextView 
+	    android:layout_width="fill_parent"
+		android:layout_height="40dp"
+		android:gravity="center"
+		android:text="我的宝宝"
+		android:paddingTop="12dp"
+		android:background="@drawable/album_pop_window_top"/>
+	<ListView 
+	    android:id="@+id/fragment_album_pop_window_listview" 
+	    android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:listSelector="#F2F2F2FF" 
+		android:divider="@null"
+		android:scrollbars="none"
+		android:footerDividersEnabled="false">
+	</ListView>
+</LinearLayout></LinearLayout>

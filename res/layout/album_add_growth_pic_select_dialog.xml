@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 选择相机或相册对话框 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="141dp"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+	<LinearLayout 
+	   	android:layout_width="fill_parent"
+    	android:layout_height="40dp" 
+    	android:orientation="vertical"
+    	android:gravity="center_vertical"
+    	android:background="#7DB31B">
+	    <TextView 	
+	        android:layout_width="fill_parent"
+    		android:layout_height="40dp"
+    		android:layout_marginLeft="8dp"
+    		android:gravity="center_vertical"
+    		android:textSize="20sp"
+    		android:textColor="#FFFFFF"
+    		android:text="请选择"/>
+	</LinearLayout>
+	
+	<LinearLayout 
+	   	android:layout_width="fill_parent"
+    	android:layout_height="100dp" 
+    	android:orientation="vertical"
+    	android:gravity="center_vertical"
+    	android:background="#FFFFFF">
+	    
+	    <TextView 
+	        android:id="@+id/add_growth_select_photo_textview"
+		    android:layout_width="fill_parent"
+	    	android:layout_height="50dp"
+	    	android:layout_marginLeft="8dp"
+	    	android:gravity="center_vertical"
+	    	android:textSize="20sp"
+	    	android:text="拍照"/>
+	    <LinearLayout 
+		   	android:layout_width="fill_parent"
+	    	android:layout_height="1dp"
+	    	android:background="#7DB31B"
+	    	android:layout_margin="2dp" ></LinearLayout>
+		<TextView 
+		    android:id="@+id/add_growth_select_album_textview"
+		    android:layout_width="fill_parent"
+	    	android:layout_height="50dp"
+	    	android:layout_marginLeft="8dp"
+	    	android:gravity="center_vertical"
+	    	android:textSize="20sp"
+	    	android:text="相册"/>
+	
+	    </LinearLayout>
+	
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center"
+    android:background="@android:color/transparent" >
+ 
+    <!-- 顶部椭园边缘 -->
+    <RelativeLayout 
+        android:layout_width="240dp"
+    	android:layout_height="160dp"
+    	android:background="@drawable/shape_album_add_baby_dialog_bg"
+    	>
+        <RelativeLayout
+            android:id="@+id/dialogTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal">
+          <TextView 
+                android:layout_width="wrap_content"
+            	android:layout_height="40dp"
+            	android:layout_marginTop="10dp"
+            	android:layout_marginLeft="100dp"
+            	android:textSize="18sp"
+            	android:textColor="#4ebfe7"
+            	android:text="提  示"/>  
+          <ImageView 
+              	android:id="@+id/album_add_baby_close"
+              	android:layout_width="40dp"
+             	android:layout_height="40dp"
+             	android:src="@drawable/album_add_baby_close"
+             	android:layout_alignParentRight="true"
+             	android:layout_alignParentTop="true"
+            	/>  
+        </RelativeLayout>
+        <LinearLayout 
+            android:id="@+id/dialogContent"
+            android:layout_width="fill_parent"
+           	android:layout_height="60dp"
+           	android:layout_below="@id/dialogTitle"
+           	android:orientation="vertical"
+           	android:gravity="center"
+            >
+            <TextView 
+                android:layout_width="wrap_content"
+           		android:layout_height="20dp"
+           		android:text="添加宝宝，和最亲密的人一起,"
+                />
+            <TextView 
+                android:layout_width="wrap_content"
+           		android:layout_height="20dp"
+           		android:text="见证宝宝的成长历程"
+                />
+        </LinearLayout>
+        <!-- 在LinearLayout中加按钮 -->
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/dialogContent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            <Button 
+                	android:id="@+id/album_remind_box_add_baby"
+                	android:layout_width="80dp"
+            		android:layout_height="28dp"
+            		android:background="@drawable/album_remindbox_ab"/>
+            <Button 
+                	android:id="@+id/album_remind_box_enter_ecode"
+                	android:layout_width="80dp"
+            		android:layout_height="28dp"
+            		android:layout_marginLeft="20dp"
+            		android:background="@drawable/album_remindbox_ecode"/>
+        </LinearLayout>
+    </RelativeLayout>
+    
+		
+ 
+</LinearLayout>

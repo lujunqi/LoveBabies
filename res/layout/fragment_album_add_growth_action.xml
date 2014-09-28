@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <ListView
+        android:id="@+id/add_growth_action_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="60dp"
+        android:listSelector="#B2B2B2"
+        android:scrollbars="none"
+        android:dividerHeight="6dp"
+        android:divider="@null" >
+    </ListView>
+	<LinearLayout 
+        android:id="@+id/fragment_blank_space"
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical"
+        android:layout_below="@id/add_growth_action_listview"></LinearLayout>
+</RelativeLayout>

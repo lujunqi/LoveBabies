@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/orange">
+    <include layout="@layout/activity_my_center_head_layout"/>
+    <LinearLayout
+        android:id="@+id/my_center_points_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="2dp"
+        android:orientation="horizontal"
+        android:background="@color/orange">
+
+        <TextView
+            android:id="@+id/my_center_points_history_textview"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="积分记录"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:background="@drawable/shape_my_points_green_round_button" />
+
+        <TextView
+            android:id="@+id/my_center_points_buy_textview"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="购买积分"
+            android:textColor="@color/green_textcolor"
+            android:textSize="18dp"
+            android:background="@color/orange" />
+
+        <TextView
+            android:id="@+id/my_center_points_rules_textview"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="积分规则"
+            android:textColor="@color/green_textcolor"
+            android:textSize="18dp"
+            android:background="@color/orange" />
+    </LinearLayout>
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/my_center_points_papger"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:background="@color/orange"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</LinearLayout>

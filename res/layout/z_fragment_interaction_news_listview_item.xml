@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="#ffffff" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="#ffffff" >
+
+            <ImageView
+                android:id="@+id/fragment_news_pic_imageview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="4dp"
+                android:background="@color/orange"
+                android:src="@drawable/ic_launcher" />
+			<ImageButton
+					android:id="@+id/activity_interaction_news_detail_video_btn"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerInParent="true"
+					android:background="@drawable/activity_interaction_news_detail_video_icon"
+					android:visibility="visible">
+				</ImageButton>
+            <TextView
+                android:id="@+id/fragment_news_org_textview"
+                android:layout_width="80dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/school_news_org_bg_02"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingTop="4dp"
+                android:singleLine="true"
+                android:text="小哈佛幼儿园"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            	android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="4dp"
+                android:background="@color/orange">
+
+            <TextView
+                android:id="@+id/fragment_news_title_textview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="幼儿园开放日"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/fragment_news_date_textview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="2014-09-10 09:10"
+                android:textColor="@color/gray_textcolor"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/fragment_news_content_textview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:text="感谢您对幼儿园的关心，为了让您了解宝宝的..."
+                android:textColor="@color/gray_textcolor"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/school_news_01" />
+
+                <TextView
+                    android:id="@+id/fragment_news_zan_count_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="59"
+                    android:textColor="@color/gray_textcolor"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/school_news_02" />
+
+                <TextView
+                    android:id="@+id/fragment_news_collect_count_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="4"
+                    android:textColor="@color/gray_textcolor"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/school_news_03" />
+
+                <TextView
+                    android:id="@+id/fragment_news_share_count_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="32"
+                    android:textColor="@color/gray_textcolor"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/school_news_04" />
+
+                <TextView
+                    android:id="@+id/fragment_news_comment_count_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="45"
+                    android:textColor="@color/gray_textcolor"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

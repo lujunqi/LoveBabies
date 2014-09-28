@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|left"
+        android:background="@drawable/fragment_health_doc_rail"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|left"
+        android:drawableLeft="@drawable/fragment_health_doc_name" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#E0DFDC" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ewen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|left"
+        android:drawableLeft="@drawable/fragment_health_doc_temperature" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#E0DFDC" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|left"
+        android:drawableLeft="@drawable/fragment_health_doc_heart" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#E0DFDC" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/info_ex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|left"
+        android:drawableLeft="@drawable/fragment_health_doc_note" />
+
+</LinearLayout>

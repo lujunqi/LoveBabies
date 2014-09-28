@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <com.xqj.lovebabies.widgets.TopActionBar
+        android:id="@+id/activity_main_actionbar_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" >
+    </com.xqj.lovebabies.widgets.TopActionBar>
+
+    <FrameLayout
+        android:id="@+id/activity_main_linearlayout_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </FrameLayout>
+
+</LinearLayout>

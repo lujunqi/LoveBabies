@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+        <ImageView
+        android:id="@+id/fragment_interaction_news_imageview_item_news_picture"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_image_position" />
+
+	    <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="5dp"
+	        android:layout_weight="1"
+	        android:orientation="vertical" >
+	
+	        <TextView
+	            android:id="@+id/fragment_interaction_news_textview_item_news_id"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:visibility="gone" />
+	
+	        <TextView
+	            android:id="@+id/fragment_interaction_news_textview_item_news_title"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="18sp"
+	            android:textStyle="bold"
+	            android:text="爱宝贝后台正式上线" />
+	
+	        <TextView
+	            android:id="@+id/fragment_interaction_news_textview_item_news_content"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="12sp"
+	            android:text="小孩磨牙是由于，凡事很洒到了房间" />
+	    </LinearLayout>
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+	    android:layout_height="1px"
+	    android:layout_marginTop="5dp"
+	    android:background="#000000"/>
+
+</LinearLayout>

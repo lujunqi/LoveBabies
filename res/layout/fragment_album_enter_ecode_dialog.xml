@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 输入邀请码对话框 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <LinearLayout 
+        android:id="@+id/fragment_content_space"
+        android:layout_width="fill_parent"
+    	android:layout_height="200dp"
+   	 	android:orientation="vertical"
+   	 	android:layout_alignParentBottom="true">
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+    		android:layout_height="50dp"
+    		android:background="#F1F0EE">
+            <Button 
+                android:id="@+id/enter_ecode_dialog_negative_button"
+                android:layout_width="50dp"
+    			android:layout_height="30dp"
+    			android:layout_marginLeft="10dp"
+    			android:layout_alignParentLeft="true"
+    			android:layout_centerVertical="true"
+    			android:textSize="12sp"
+    			android:background="@drawable/shape_green_round_button"
+    			android:text="@string/album_negative_button_text_value"
+    			android:textColor="#ffffff"/>
+            
+             <Button 
+                android:id="@+id/enter_ecode_dialog_positive_button"
+                android:layout_width="50dp"
+    			android:layout_height="30dp"
+    			android:layout_marginRight="10dp"
+    			android:layout_alignParentRight="true"
+    			android:layout_centerVertical="true"
+    			android:textSize="12sp"
+    			android:background="@drawable/shape_green_round_button"
+    			android:text="@string/album_positive_button_text_value"
+    			android:textColor="#ffffff"/>
+             
+            <TextView 
+                android:layout_toRightOf="@id/enter_ecode_dialog_negative_button"
+                android:layout_toLeftOf="@id/enter_ecode_dialog_positive_button"
+                android:layout_width="300dp"
+    			android:layout_height="20dp"
+    			android:text="输入邀请码添加宝宝"
+    			android:textSize="15sp"
+    			android:textColor="#000000"
+    			android:gravity="center"
+    			android:layout_centerInParent="true"/>
+            
+        </RelativeLayout>
+        <LinearLayout 
+            android:layout_width="fill_parent"
+    		android:layout_height="60dp"
+    		android:layout_gravity="center"
+    		android:background="#FFFFFF"
+    		android:orientation="horizontal">
+             
+            <TextView 
+                android:layout_width="wrap_content"
+    			android:layout_height="40dp"
+    			android:layout_marginLeft="20dp"
+    			android:textSize="15sp"
+    			android:text="输入邀请码："
+    			android:textColor="#7DB31D"
+    			android:layout_gravity="center"
+    			android:gravity="center_vertical"
+    			/>
+            
+            <EditText 
+                android:id="@+id/enter_ecode_dialog_editText"
+                android:layout_width="180dp"
+    			android:layout_height="40dp"
+    			android:layout_marginLeft="10dp"
+    			android:layout_gravity="center"
+    			android:gravity="center_vertical"
+    			android:textSize="14sp"
+    			android:hint="请输入您收到的邀请码"/>
+            
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:background="#FFFFFF"
+    		android:gravity="center"
+    		android:orientation="vertical">
+            <TextView 
+                android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_marginRight="20dp"
+    			android:layout_marginLeft="20dp"
+    			android:layout_marginTop="10dp"
+    			android:layout_marginBottom="43dp"
+    			android:text="您可以在微信/QQ/短信上收到亲友们发送的邀请码，输入后就可以看到宝宝了！"
+    			android:textSize="14sp"
+    			android:textColor="#B2B2B2"
+    			android:gravity="center"></TextView>
+            
+        </LinearLayout>
+    </LinearLayout>
+	<LinearLayout 
+        android:id="@+id/fragment_blank_space"
+        android:layout_width="fill_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical"
+        android:layout_below="@id/fragment_content_space"></LinearLayout>
+</RelativeLayout>

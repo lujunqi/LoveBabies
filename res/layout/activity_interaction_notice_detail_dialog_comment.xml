@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="300dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/activity_interaction_notice_detail_dialog_title"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#7cb31d"
+        android:gravity="left|center_vertical"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/activity_interaction_notice_detail_dialog_comment_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@null"
+        android:gravity="top|left"
+        android:maxLines="5"
+        android:minLines="3"
+        android:singleLine="false"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/activity_interaction_notice_detail_dialog_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/selector_common_button"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/activity_interaction_notice_detail_dialog_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/selector_common_button"
+            android:padding="10dp" />
+    </LinearLayout>
+
+</LinearLayout>

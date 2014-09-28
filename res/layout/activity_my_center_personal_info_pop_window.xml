@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:id="@+id/my_center_personal_info_bottom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="#3D3D3F"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        
+        <Button 
+            android:id="@+id/pop_window_cancel_btn"
+            android:layout_width="fill_parent"
+        	android:layout_height="32dp"
+        	android:layout_marginLeft="5dp"
+        	android:layout_marginRight="5dp"
+        	android:text="取消"
+        	android:textColor="#ffffff"
+        	android:background="@drawable/personal_info_cancel_button_bg"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/my_center_personal_info_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="92dp"
+        android:layout_above="@id/my_center_personal_info_bottom_layout"
+        android:orientation="vertical"
+        android:background="#7F7F8C"
+        >
+        <Button 
+            android:id="@+id/pop_window_album_btn"
+            android:layout_width="fill_parent"
+        	android:layout_height="32dp"
+        	android:layout_marginLeft="5dp"
+        	android:layout_marginRight="5dp"
+        	android:layout_alignParentBottom="true"
+        	android:text="选择本地照片"
+        	android:textColor="#000000"
+        	android:background="@drawable/personal_info_white_button_bg"/>
+        
+         <Button 
+            android:id="@+id/pop_window_photo_btn"
+            android:layout_width="fill_parent"
+        	android:layout_height="32dp"
+        	android:layout_marginLeft="5dp"
+        	android:layout_marginRight="5dp"
+        	android:layout_marginBottom="10dp"
+        	android:layout_above="@id/pop_window_album_btn"
+        	android:text="拍照"
+        	android:textColor="#000000"
+        	android:background="@drawable/personal_info_white_button_bg"/>
+    </RelativeLayout>
+
+</RelativeLayout>

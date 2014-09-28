@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sp="http://schemas.android.com/apk/res/com.xqj.lovebabies"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include 
+        layout="@layout/activity_my_center_head_layout"/>
+    
+    <com.xqj.lovebabies.widgets.SwipeListView
+        android:id="@+id/my_center_favorite_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/orange"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/green_divider"
+        android:dividerHeight="1px"
+        sp:right_width="120dp" 
+    />
+
+</LinearLayout>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+     <include 
+        layout="@layout/activity_my_center_head_layout"/>
+     <LinearLayout 
+        android:layout_width="fill_parent"
+   	 	android:layout_height="wrap_content"
+   	 	android:layout_margin="10dp"
+   	 	android:background="@drawable/shape_my_center_green_round_bg"
+   	 	android:orientation="vertical">
+   	 	 
+   	 	 <!-- 头像 -->
+   	 	 <RelativeLayout 
+   	 	    android:id="@+id/my_center_personal_info_head_layout"
+	        android:layout_width="fill_parent"
+	   	 	android:layout_height="wrap_content"
+	   	 	android:layout_margin="10dp"
+	   	 	android:gravity="center_vertical" >
+	   	 	
+   	 	     <TextView 
+   	 	         	android:id="@+id/my_center_personal_info_head_textview"
+   	 	         	android:layout_width="46dp"
+		   	 		android:layout_height="46dp"
+		   	 		android:layout_alignParentLeft="true"
+		   	 		android:gravity="center_vertical"
+		   	 		android:layout_marginLeft="4dp"
+		   	 		android:text="头像"
+		   	 		android:textSize="22sp"
+		   	 		android:textColor="@color/green_textcolor" />
+   	 	     
+   	 	      <RelativeLayout 
+   	 	          	android:id="@+id/my_center_personal_info_head_inner_layout"
+		         	android:layout_width="fill_parent"
+		   	 	 	android:layout_height="wrap_content"
+		   	 	 	android:layout_toRightOf="@id/my_center_personal_info_head_textview"
+		   	 	 	android:layout_alignParentRight="true"
+		   	 	 	android:gravity="center_vertical" >
+		   	 	<ImageView 
+   	 	         	android:id="@+id/my_center_arrow_icon_1"
+   	 	         	android:layout_width="20dp"
+		   			android:layout_height="20dp"
+		   	 		android:layout_alignParentRight="true"
+		   	 		android:layout_centerVertical="true"
+		   	 		android:gravity="center_vertical"
+		   	 		android:src="@drawable/my_center_arrow_icon"/>
+   	 	     
+	   	 	     <ImageView 
+	   	 	         	android:id="@+id/my_center_head_icon_imageview"
+	   	 	         	android:layout_width="52dp"
+			   	 		android:layout_height="52dp"
+			   	 		android:layout_marginRight="10dp"
+			   	 		android:layout_centerVertical="true"
+			   	 		android:layout_toLeftOf="@id/my_center_arrow_icon_1"
+			   	 		android:gravity="center_vertical"
+			   	 		android:scaleType="fitXY"
+			   	 		android:src="@drawable/default_head_icon"/>
+   	 	          
+		   	 	</RelativeLayout>
+         </RelativeLayout>
+         
+   	 	 <LinearLayout 
+   	 	     android:layout_width="fill_parent"
+   	 	     android:layout_height="1dp"
+   	 	     android:background="@color/green_divider"
+   	 	     android:orientation="horizontal"
+   	 	     ></LinearLayout>
+   	 	 
+   	 	 <!-- 昵称 -->
+   	 	 <RelativeLayout 
+   	 	     android:id="@+id/my_center_user_nick_layout"
+   	 	     android:layout_width="fill_parent"
+   	 	     android:layout_height="wrap_content"
+   	 	     android:layout_margin="16dp">
+   	 	     
+   	 	     <TextView 
+   	 	         android:id="@+id/my_center_nick_textview"
+	   	 	     android:layout_width="wrap_content"
+	   	 	     android:layout_height="wrap_content"
+	   	 	     android:layout_centerVertical="true"
+	   	 	     android:text="昵称"
+	   	 	     android:textSize="22sp"
+		   	 	 android:textColor="@color/green_textcolor"/>
+   	 	     
+   	 	      <RelativeLayout 
+  	 	         android:id="@+id/my_center_user_nick_inner_layout"
+	         	 android:layout_width="fill_parent"
+	   	 	 	 android:layout_height="wrap_content"
+	   	 	 	 android:layout_toRightOf="@id/my_center_nick_textview"
+	   	 	 	 android:layout_alignParentRight="true"
+	   	 	 	 android:gravity="center_vertical" >
+	   	 	      <ImageView 
+	  	 	         android:id="@+id/my_center_arrow_icon_2"
+	  	 	         android:layout_width="20dp"
+		   			 android:layout_height="20dp"
+		   	 		 android:layout_alignParentRight="true"
+		   	 		 android:layout_centerVertical="true"
+		   	 		 android:gravity="center_vertical"
+		   	 		 android:src="@drawable/my_center_arrow_icon"/>
+	   	 	     
+	   	 	     <TextView 
+	   	 	         android:id="@+id/my_center_user_nick_textview"
+		   	 	     android:layout_width="wrap_content"
+		   	 	     android:layout_height="wrap_content"
+		   	 	     android:layout_toLeftOf="@id/my_center_arrow_icon_2"
+		   	 	     android:layout_marginRight="4dp"
+		   	 	     android:layout_centerVertical="true"
+		   	 	     android:textSize="18sp"
+			   	 	 android:textColor="@color/gray_textcolor"/>
+   	 	         </RelativeLayout>
+   	 	    
+   	 	 </RelativeLayout>
+   	 	 
+   	 	 <LinearLayout 
+   	 	     android:layout_width="fill_parent"
+   	 	     android:layout_height="1dp"
+   	 	     android:background="@color/green_divider"
+   	 	     android:orientation="horizontal"
+   	 	     ></LinearLayout>
+   	 	 
+   	 	 <!-- 我的帐号 -->
+   	 	 <RelativeLayout 
+   	 	     android:id="@+id/my_center_account_layout"
+   	 	     android:layout_width="fill_parent"
+   	 	     android:layout_height="wrap_content"
+   	 	     android:layout_margin="16dp">
+   	 	     
+   	 	    <TextView 
+   	 	         android:id="@+id/my_center_account_textview"
+	   	 	     android:layout_width="wrap_content"
+	   	 	     android:layout_height="wrap_content"
+	   	 	     android:layout_centerVertical="true"
+	   	 	     android:text="我的帐号"
+	   	 	     android:textSize="22sp"
+		   	 	 android:textColor="@color/green_textcolor"/>
+   	 	     
+   	 	      <RelativeLayout 
+  	 	         android:id="@+id/my_center_account_inner_layout"
+	         	 android:layout_width="fill_parent"
+	   	 	 	 android:layout_height="wrap_content"
+	   	 	 	 android:layout_toRightOf="@id/my_center_account_textview"
+	   	 	 	 android:layout_alignParentRight="true"
+	   	 	 	 android:gravity="center_vertical" >
+	   	 	      <ImageView 
+	  	 	         android:id="@+id/my_center_arrow_icon_3"
+	  	 	         android:layout_width="20dp"
+		   			 android:layout_height="20dp"
+		   	 		 android:layout_alignParentRight="true"
+		   	 		 android:layout_centerVertical="true"
+		   	 		 android:gravity="center_vertical"
+		   	 		 android:src="@drawable/my_center_arrow_icon"/>
+	   	 	     
+	   	 	     <TextView 
+	   	 	         android:id="@+id/my_center_my_account_textview"
+		   	 	     android:layout_width="wrap_content"
+		   	 	     android:layout_height="wrap_content"
+		   	 	     android:layout_toLeftOf="@id/my_center_arrow_icon_3"
+		   	 	     android:layout_marginRight="4dp"
+		   	 	     android:layout_centerVertical="true"
+		   	 	     android:textSize="18sp"
+			   	 	 android:textColor="@color/gray_textcolor"/>
+   	 	         </RelativeLayout>
+   	 	 </RelativeLayout>
+   	 	 
+   	 	 <LinearLayout 
+   	 	     android:layout_width="fill_parent"
+   	 	     android:layout_height="1dp"
+   	 	     android:background="@color/green_divider"
+   	 	     android:orientation="horizontal"
+   	 	     ></LinearLayout>
+   	 	 
+   	 	 <!-- 密码-->
+   	 	 <RelativeLayout 
+   	 	     android:id="@+id/my_center_password_layout"
+   	 	     android:layout_width="fill_parent"
+   	 	     android:layout_height="wrap_content"
+   	 	     android:layout_margin="16dp">
+   	 	     
+   	 	    <TextView 
+   	 	         android:id="@+id/my_center_password_textview"
+	   	 	     android:layout_width="wrap_content"
+	   	 	     android:layout_height="wrap_content"
+	   	 	     android:layout_marginLeft="2dp"
+	   	 	     android:layout_centerVertical="true"
+	   	 	     android:text="密码"
+	   	 	     android:textSize="22sp"
+		   	 	 android:textColor="@color/green_textcolor"/>
+   	 	     
+   	 	      <RelativeLayout 
+  	 	         android:id="@+id/my_center_password_inner_layout"
+	         	 android:layout_width="fill_parent"
+	   	 	 	 android:layout_height="wrap_content"
+	   	 	 	 android:layout_toRightOf="@id/my_center_password_textview"
+	   	 	 	 android:layout_alignParentRight="true"
+	   	 	 	 android:gravity="center_vertical" >
+	   	 	      <ImageView 
+	  	 	         android:id="@+id/my_center_arrow_icon_4"
+	  	 	         android:layout_width="20dp"
+		   			 android:layout_height="20dp"
+		   	 		 android:layout_alignParentRight="true"
+		   	 		 android:layout_centerVertical="true"
+		   	 		 android:gravity="center_vertical"
+		   	 		 android:src="@drawable/my_center_arrow_icon"/>
+	   	 	     
+	   	 	     <TextView 
+	   	 	         android:id="@+id/my_center_my_password_textview"
+		   	 	     android:layout_width="wrap_content"
+		   	 	     android:layout_height="wrap_content"
+		   	 	     android:layout_toLeftOf="@id/my_center_arrow_icon_4"
+		   	 	     android:layout_marginRight="4dp"
+		   	 	     android:layout_centerVertical="true"
+		   	 	     android:textSize="18sp"
+		   	 	     android:text="******"
+			   	 	 android:textColor="@color/gray_textcolor"/>
+   	 	         </RelativeLayout>
+   	 	 </RelativeLayout>
+   	 	 
+   	 	  <LinearLayout 
+   	 	     android:layout_width="fill_parent"
+   	 	     android:layout_height="1dp"
+   	 	     android:background="@color/green_divider"
+   	 	     android:orientation="horizontal"
+   	 	     ></LinearLayout>
+   	 	  
+   	 	  <!-- 邮箱  -->
+   	 	 <RelativeLayout 
+   	 	     android:id="@+id/my_center_email_layout"
+   	 	     android:layout_width="fill_parent"
+   	 	     android:layout_height="wrap_content"
+   	 	     android:layout_margin="16dp">
+   	 	     
+   	 	    <TextView 
+   	 	         android:id="@+id/my_center_email_textview"
+	   	 	     android:layout_width="wrap_content"
+	   	 	     android:layout_height="wrap_content"
+	   	 	     android:layout_marginLeft="2dp"
+	   	 	     android:layout_centerVertical="true"
+	   	 	     android:text="邮箱"
+	   	 	     android:textSize="22sp"
+		   	 	 android:textColor="@color/green_textcolor"/>
+   	 	     
+   	 	      <RelativeLayout 
+  	 	         android:id="@+id/my_center_email_inner_layout"
+	         	 android:layout_width="fill_parent"
+	   	 	 	 android:layout_height="wrap_content"
+	   	 	 	 android:layout_toRightOf="@id/my_center_email_textview"
+	   	 	 	 android:layout_alignParentRight="true"
+	   	 	 	 android:gravity="center_vertical" >
+	   	 	      <ImageView 
+	  	 	         android:id="@+id/my_center_arrow_icon_5"
+	  	 	         android:layout_width="20dp"
+		   			 android:layout_height="20dp"
+		   	 		 android:layout_alignParentRight="true"
+		   	 		 android:layout_centerVertical="true"
+		   	 		 android:gravity="center_vertical"
+		   	 		 android:src="@drawable/my_center_arrow_icon"/>
+	   	 	     
+	   	 	     <TextView 
+	   	 	         android:id="@+id/my_center_my_email_textview"
+		   	 	     android:layout_width="wrap_content"
+		   	 	     android:layout_height="wrap_content"
+		   	 	     android:layout_toLeftOf="@id/my_center_arrow_icon_5"
+		   	 	     android:layout_marginRight="4dp"
+		   	 	     android:layout_centerVertical="true"
+		   	 	     android:textSize="18sp"
+			   	 	 android:textColor="@color/gray_textcolor"/>
+   	 	         </RelativeLayout>
+   	 	 </RelativeLayout>
+	</LinearLayout>
+</LinearLayout>

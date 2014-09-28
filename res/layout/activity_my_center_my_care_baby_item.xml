@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="96dp"
+    android:orientation="horizontal"
+    android:background="@color/orange" >
+      <RelativeLayout
+        android:id="@+id/my_center_my_care_item_left_layout"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_marginLeft="4dp"
+        android:background="@color/orange" >
+
+        <ImageView
+            android:id="@+id/my_center_my_care_item_icon_imageview"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/default_head_icon" />
+
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/my_center_my_care_item_icon_imageview"
+            android:orientation="vertical"
+            android:background="@color/orange"
+            >
+            <TextView
+	            android:id="@+id/my_center_my_care_bay_name_textview"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center_vertical"
+	            android:textColor="#000000"
+	            android:textSize="16sp"
+	            android:text="小甜甜" />
+             <TextView
+	            android:id="@+id/my_center_my_care_add_date_textview"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="4dp"
+	            android:gravity="center_vertical"
+	            android:textColor="@color/gray_textcolor"
+	            android:textSize="14sp"
+	            android:text="2013-10-08" />
+              <TextView
+	            android:id="@+id/my_center_my_care_relations_textview"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="4dp"
+	            android:gravity="center_vertical"
+	            android:textColor="@color/blue_textcolor"
+	            android:textSize="12sp"
+	            android:text="(我是她的爷爷哦)" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_center_my_care_item_del_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/red_bg" >
+
+        <TextView
+            android:id="@+id/my_center_my_care_item_del_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="取消关注"
+            android:textSize="16sp"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+</LinearLayout>
+
