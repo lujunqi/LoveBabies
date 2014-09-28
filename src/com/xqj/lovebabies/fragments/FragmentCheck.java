@@ -191,7 +191,6 @@ public class FragmentCheck extends Fragment {
 				.get_drawable_from_res(getResources(),
 						drawableId,
 						button_icom_size, button_icom_size), null, null);
-		
 	}
 
 
